@@ -1,0 +1,282 @@
+<portfolio>
+  <portfolioIdentifier identifierType="RAiD">10.80390/180ef9c4<portfolioIdentifier>
+  <titles>
+    <title xml:lang="en">Example title</title>
+    <title xml:lang="en" titleType="Subtitle">Example subtitle</title>
+  </titles>
+  <contributors>
+    <contributor contributorType="Data Collector">
+        <contributorName nameType="Personal">Garcia, Sofia</contributorName>
+        <givenName>Sofia</givenName>
+        <familyName>Garcia</familyName>
+        <nameIdentifier schemeURI="https://orcid.org/" nameIdentifierScheme="ORCID">0000-0001-5727-2427</nameIdentifier>
+        <affiliation affiliationIdentifier="https://ror.org/03efmqc40" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">Arizona State University</affiliation>
+    </contributor>
+    <contributor contributorType="HostingInstitution">
+        <contributorName xml:lang="en" nameType="Organizational">California Digital Library</contributorName>
+        <nameIdentifier schemeURI="https://ror.org/" nameIdentifierScheme="ROR">https://ror.org/03yrm5c26</nameIdentifier>
+    </contributor>
+  </contributors>
+  <descriptions>
+    <description xml:lang="en" descriptionType="Abstract">Example abstract</description>
+  </descriptions>
+  <contextStatement xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <xhtml:section>
+        <xhtml:title>Project Framework</xhtml:title>
+        <xhtml:p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <xhtml:em>Integer augue felis</xhtml:em>, 
+sollicitudin vitae condimentum quis, vehicula vehicula est. Quisque viverra venenatis lacinia. Suspendisse molestie
+ nibh ligula, vitae efficitur enim malesuada ac. Proin tempus mattis neque, vitae dictum sapien consequat 
+et.</xhtml:p>
+    <xhtml:p> Mauris vulputate varius magna, at rhoncus dui vestibulum id. Aliquam aliquam diam ut enim accumsan, 
+nec elementum dolor convallis. Duis porta non libero eu blandit. Aenean augue est, eleifend ut diam id, pulvinar 
+pulvinar dolor. Etiam non mauris sodales, pharetra leo feugiat, venenatis velit. Aenean accumsan, lorem et euismod
+ gravida, magna mi porttitor lorem, non mollis leo est luctus velit. Mauris vitae egestas lacus. Vestibulum dictum 
+laoreet risus vel posuere.</xhtml:p>
+    </xhtml:section>
+    <xhtml:section>
+    <xhtml:title>Project Narrative</xhtml:title>
+        <xhtml:p>Maecenas sed auctor est. Suspendisse sed magna tempor, condimentum nulla id, condimentum nibh. 
+Phasellus risus ligula, varius ut velit accumsan, cursus cursus nisl. Suspendisse faucibus elit non purus tempor 
+commodo. Proin interdum blandit urna, sollicitudin cursus libero tincidunt eget. Aliquam condimentum nec augue vitae 
+tincidunt. Donec vitae consectetur sapien.</xhtml:p>
+    <xhtml:p>Ut dictum ultrices porta. Phasellus scelerisque porttitor augue, eu finibus felis gravida a. Orci 
+varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi
+ tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur malesuada sodales leo sed eleifend.
+ Nam ac tristique velit. Pellentesque tincidunt urna ac iaculis pretium. Morbi nec erat et elit facilisis 
+suscipit.</xhtml:p>
+    </xhtml:section>
+    <xhtml:section>
+        <xhtml:title>Research Insights</xhtml:title>
+        <xhtml:p>Etiam consequat tortor eros, sed lobortis nunc tincidunt eu. Nulla in velit dignissim, dapibus arcu 
+nec, elementum ante. Duis porttitor purus in interdum maximus. Sed sit amet vulputate mauris, eu tincidunt nibh. 
+Pellentesque interdum lorem felis, vitae fermentum est lacinia ut. Aliquam erat volutpat. Nullam molestie placerat 
+arcu id posuere. Mauris ac dui finibus, volutpat nisl in, ullamcorper eros.</xhtml:p>
+    </xhtml:section>
+    <xhtml:section>
+        <xhtml:title>Further Dissemination And Recognition</xhtml:title>
+        <xhtml:p>Etiam consequat tortor eros, sed lobortis nunc tincidunt eu. Nulla in velit dignissim, dapibus arcu 
+nec, elementum ante. Duis porttitor purus in interdum maximus. Sed sit amet vulputate mauris, eu tincidunt nibh. 
+Pellentesque interdum lorem felis, vitae fermentum est lacinia ut. Aliquam erat volutpat. Nullam molestie placerat 
+arcu id posuere. Mauris ac dui finibus, volutpat nisl in, ullamcorper eros.</xhtml:p>
+        <xhtml:ul>
+            <xhtml:li>This is link to <xhtml:a href="https://somewhere.org">Some where</xhtml:a></xhtml:li>
+            <xhtml:li>See above for a link to somewhere</xhtml:li>
+        </xhtml:ul>
+        <xhtml:img src="https://images.org/image1.png"></xhtml:img>
+    </xhtml:section>
+  </contextStatement>
+  <dates>
+      <date dateType="Issued">2022-08-01</date>
+      <date dateType="Other" dateInformation="Conceptualized">2020-01-01</date>
+  </dates>
+  <publisher xml:lang="en" publisherIdentifier="https://ror.org/04ycpbx82" publisherIdentifierScheme="ROR" schemeURI="https://ror.org/">University of Westminster</publisher>
+  <alternateIdentifiers>
+      <alternateIdentifier alternateIdentifierType="DOI">10.34737/w3803</alternateIdentifier>
+      <alternateIdentifier alternateIdentifierType="URL">https://portfolios.org/1234</alternateIdentifier>
+  </alternateIdentifiers>
+  <subjects>
+    <subject xml:lang="en" subjectScheme="Library of Congress Subject Headings (LCSH)" schemeURI="https://id.loc.gov/authorities/subjects.html" valueURI="https://id.loc.gov/authorities/subjects/sh2009009655.html">Climate change mitigation</subject>
+    <subject xml:lang="en" subjectScheme="ANZSRC Fields of Research" schemeURI="https://www.abs.gov.au/statistics/classifications/australian-and-new-zealand-standard-research-classification-anzsrc" classificationCode="370201">Climate change processes</subject>
+  </subject>
+  <fundingReferences>
+    <fundingReference>
+      <funderName>European Commission</funderName>
+      <funderIdentifier funderIdentifierType="Crossref Funder ID">https://doi.org/10.13039/501100000780</funderIdentifier>
+      <awardNumber awardURI="https://cordis.europa.eu/project/rcn/100180_en.html">282625</awardNumber>
+      <awardTitle>MOTivational strength of ecosystem services and alternative ways to express the value of BIOdiversity</awardTitle>
+      </fundingReference>
+    <fundingReference>
+      <funderName>European Commission</funderName>
+      <funderIdentifier funderIdentifierType="Crossref Funder ID">https://doi.org/10.13039/501100000780</funderIdentifier>
+      <awardNumber awardURI="https://cordis.europa.eu/project/rcn/100603_en.html">284382</awardNumber>
+      <awardTitle>Institutionalizing global genetic-resource commons. Global Strategies for accessing and using essential public knowledge assets in the life sciences</awardTitle>
+    </fundingReference>
+  </fundingReferences>
+  <project>https://handle.net/10378.1/1590366</project>
+  <portfolioItems>
+    <portfolioItem portfolioItemType="Artefact">
+      <artefact artefactType="sculpture">
+        <identifier IdentifierType="URL">https://sculpture.org/this-is-a-sculpture</identifier>
+        <contributors>
+          <contributor contributorType="sculptor">
+            <contributorName nameType="Personal">Dumbill, Eleanor</contributorName>
+            <givenName>Eleanor</givenName>
+            <familyName>Dumbill</familyName>
+            <nameIdentifier schemeURI="https://orcid.org/" nameIdentifierScheme="ORCID">0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/03efmqc40" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">Arizona State University</affiliation>
+          </contributor>
+          <contributor contributorType="HostingInstitution">
+            <contributorName xml:lang="en" nameType="Organizational">Victoria and Albert Museum</contributorName>
+            <nameIdentifier schemeURI="https://ror.org/" nameIdentifierScheme="ROR">https://ror.org/034hh2e11</nameIdentifier>
+          </contributor>
+        </contributors>
+        <titles>
+          <title xml:lang="en">Wonderful Sculpture</title>
+          <title xml:lang="en" titleType="Subtitle">Crocodile in repose</title>
+        </titles>
+        <dates>
+          <date dateType="Created">2022-08-01</date>
+          <date dateType="Collected">2004-03-02/2005-06-02</date>
+          <date dateType="Other" dateInformation="Conceptualized">2020-01-01</date>
+        </dates>
+        <geoLocation>
+          <geoLocationPlace>Kensington</geoLocationPlace>
+          <geoLocationPoint>
+            <pointLongitude>-52.000000</pointLongitude>
+            <pointLatitude>69.000000</pointLatitude>
+          </geoLocationPoint>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationBox>
+            <westBoundLongitude>-123.27</westBoundLongitude>
+            <eastBoundLongitude>-123.225</eastBoundLongitude>
+            <southBoundLatitude>49.24</southBoundLatitude>
+            <northBoundLatitude>49.28</northBoundLatitude>
+          </geoLocationBox>
+        </geoLocation>
+      </artefact>
+    </portfolioItem>
+    <portfolioItem portfolioItemType="Event">  
+      <portfolioItemIdentifier portfolioItemIdentifierType="URL">/prvoices_schema/wiki/Event</portfolioItemIdentifier>
+      <event eventType="Exhibition">
+        <contributors>
+          <contributor contributorType="Curator">
+            <contributorName nameType="Personal">Fyson, Will</contributorName>
+            <givenName>Will</givenName>
+            <familyName>Fyson</familyName>
+            <nameIdentifier schemeURI="https://orcid.org/" nameIdentifierScheme="ORCID">0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/034hh2e11" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">Victoria and Albert Museum</affiliation>
+          </contributor>
+          <contributor>
+            <contributorName xml:lang="en" nameType="Organizational">Victoria and Albert Museum</creatorName>
+            <nameIdentifier schemeURI="https://ror.org/" nameIdentifierScheme="ROR">https://ror.org/034hh2e11</nameIdentifier>
+          </contributor>
+        </contributors>
+        <titles>
+          <title xml:lang="en">Wonderful Sculpture Exhibition</title>
+          <title xml:lang="en" titleType="Subtitle">A retrospective of the pretend work of Eleanor Dumbill</title>
+        </titles>
+        <dates>
+          <date dateType="Duration">2024-01-01/2024-06-30</date>
+          <date dateType="Other" dateInformation="Conceptualized">2023-01-01</date>
+        </dates>
+        <geoLocation>
+          <geoLocationPlace>Kensington</geoLocationPlace>
+          <geoLocationPoint>
+            <pointLongitude>-52.000000</pointLongitude>
+            <pointLatitude>69.000000</pointLatitude>
+          </geoLocationPoint>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationBox>
+            <westBoundLongitude>-123.27</westBoundLongitude>
+            <eastBoundLongitude>-123.225</eastBoundLongitude>
+            <southBoundLatitude>49.24</southBoundLatitude>
+            <northBoundLatitude>49.28</northBoundLatitude>
+          </geoLocationBox>
+        </geoLocation>
+        <files>
+          <file id="1">
+            <uri>https://researchdata.aston.ac.uk/id/file/11771</uri>
+            <filename>AstonLockdownSurveyReadingCorpus_survey.docx</filename>
+            <format>application/vnd.openxmlformats-officedocument.wordprocessingml.document</format>
+            <rights xml:lang="en" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-4.0" rightsURI="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</rights>
+            <contributors>
+              <contributor contributorType="Illustrator">
+                <contributorName nameType="Personal">Garcia, Sofia</contributorName>
+                <givenName>Sofia</givenName>
+                <familyName>Garcia</familyName>
+                <nameIdentifier schemeURI="https://orcid.org/" nameIdentifierScheme="ORCID">0000-0001-5727-2427</nameIdentifier>
+                <affiliation affiliationIdentifier="https://ror.org/03efmqc40" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">Arizona State University</affiliation>
+              </contributor>
+              <contributor contributorType="HostingInstitution">
+                <contributorName xml:lang="en" nameType="Organizational">California Digital Library</contributorName>
+                <nameIdentifier schemeURI="https://ror.org/" nameIdentifierScheme="ROR">https://ror.org/03yrm5c26</nameIdentifier>
+              </contributor>
+            </contributors>
+          </file>
+        </files>
+      </event>
+    </portfolioItem>
+    <portfolioItem portfolioItemType="Literature">  
+      <portfolioItemIdentifier portfolioItemIdentifierType="URL">/prvoices_schema/wiki/Literature</portfolioItemIdentifier>
+      <literature literatureType="Book">
+        <contributors>
+          <contributor>
+            <contributorName nameType="Personal">Garcia, Sofia</contributorName>
+            <givenName>Sofia</givenName>
+            <familyName>Garcia</familyName>
+            <nameIdentifier schemeURI="https://orcid.org/" nameIdentifierScheme="ORCID">0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/03efmqc40" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">Arizona State University</affiliation>
+          </contributor>
+          <contributor>
+            <contributorName xml:lang="en" nameType="Organizational">Royal College of Music</creatorName>
+            <nameIdentifier schemeURI="https://ror.org/" nameIdentifierScheme="ROR">https://ror.org/04kwn3124</nameIdentifier>
+          </contributor>
+        </contributors>
+        <titles>
+          <title xml:lang="en">Example title</title>
+          <title xml:lang="en" titleType="Subtitle">Example subtitle</title>
+        </titles>
+        <dates>
+          <date dateType="Duration">2024-06-15/2024-08-01</date>
+          <date dateType="Other" dateInformation="Conceptualized">2020-01-01</date>
+        </dates>
+      </literature>
+    </portfolioItem>
+   <portfolioItem portfolioItemType="Collection">  
+      <portfolioItemIdentifier portfolioItemIdentifierType="URL">/prvoices_schema/wiki/Collection</portfolioItemIdentifier>
+      <collection artefactType="playlist">
+        <identifier IdentifierType="URL">https://open.spotify.com/playlist/4Qf3fggT4nVn3DUurOKcYz</identifier>
+        <contributors>
+          <contributor contributorType="Compiler">
+            <contributorName nameType="Personal">Dyer, Thomas</contributorName>
+            <givenName>Thomas</givenName>
+            <familyName>Dyer</familyName>
+            <nameIdentifier schemeURI="https://orcid.org/" nameIdentifierScheme="ORCID">0000-0003-4716-4670</nameIdentifier>
+          </contributor>
+        </contributors>
+        <titles>
+          <title xml:lang="en">Campfire bubblers</title>
+        </titles>
+        <extent extentType="duration" extentUnit="hours">20</extent>
+      </collection>
+    </portfolioItem>
+  </portfolioItems> 
+  <relatedItems>
+    <relatedItem relationType="IsPublishedIn" relatedItemType="Journal">
+      <relatedItemIdentifier relatedItemIdentifierType="ISSN">1234-5678</relatedItemIdentifier>
+      <titles>
+        <title>Journal of Metadata Examples</title>
+      </titles>
+      <contributors>
+        <contributor contributorType="Curator">
+          <contributorName nameType="Personal">Fyson, Will</contributorName>
+          <givenName>Will</givenName>
+          <familyName>Fyson</familyName>
+          <nameIdentifier schemeURI="https://orcid.org/" nameIdentifierScheme="ORCID">0000-0001-5727-2427</nameIdentifier>
+          <affiliation affiliationIdentifier="https://ror.org/034hh2e11" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">Victoria and Albert Museum</affiliation>
+        </contributor>
+        <contributor>
+          <contributorName xml:lang="en" nameType="Organizational">Victoria and Albert Museum</contributorName>
+          <nameIdentifier schemeURI="https://ror.org/" nameIdentifierScheme="ROR">https://ror.org/034hh2e11</nameIdentifier>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Duration">2024-01-01/2024-06-30</date>
+        <date dateType="Other" dateInformation="Conceptualized">2023-01-01</date>
+      </dates>
+    </relatedItem>
+  </relatedItems>
+  <organisationalUnits>
+    <organisationalUnit organisationalUnitType="Group" organisationalUnitIdentifier="https://ror.org/04c5nqw76" organisationalUnitIdentifierType="ROR">
+      Experimental Design Practices Research Excellence Group
+    </organisationalUnit>
+    <organisationalUnit organisationalUnitType="School" organisationalUnitIdentifier="https://research.brighton.ac.uk/en/organisations/school-of-art-and-media" organisationalUnitIdentifierType="URL">
+      School of Art and Media
+    </organisationalUnit>
+  </organisationalUnits>
+  <rightsStatement xml:lang="en">
+    The metadata associated with this portfolio is available under a CC0 license. Portfolio items may be available under different licenses.
+  </rightsStatement>
+</portfolio>
