@@ -1,5 +1,5 @@
 <portfolio>
-  <portfolioIdentifier identifierType="RAiD">10.80390/180ef9c4<portfolioIdentifier>
+  <portfolioIdentifier identifierType="RAiD">10.80390/180ef9c4</portfolioIdentifier>
   <titles>
     <title xml:lang="en">Example title</title>
     <title xml:lang="en" titleType="Subtitle">Example subtitle</title>
@@ -77,7 +77,7 @@ arcu id posuere. Mauris ac dui finibus, volutpat nisl in, ullamcorper eros.</xht
   <subjects>
     <subject xml:lang="en" subjectScheme="Library of Congress Subject Headings (LCSH)" schemeURI="https://id.loc.gov/authorities/subjects.html" valueURI="https://id.loc.gov/authorities/subjects/sh2009009655.html">Climate change mitigation</subject>
     <subject xml:lang="en" subjectScheme="ANZSRC Fields of Research" schemeURI="https://www.abs.gov.au/statistics/classifications/australian-and-new-zealand-standard-research-classification-anzsrc" classificationCode="370201">Climate change processes</subject>
-  </subject>
+  </subjects>
   <fundingReferences>
     <fundingReference>
       <funderName>European Commission</funderName>
@@ -148,7 +148,7 @@ arcu id posuere. Mauris ac dui finibus, volutpat nisl in, ullamcorper eros.</xht
             <affiliation affiliationIdentifier="https://ror.org/034hh2e11" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">Victoria and Albert Museum</affiliation>
           </contributor>
           <contributor>
-            <contributorName xml:lang="en" nameType="Organizational">Victoria and Albert Museum</creatorName>
+            <contributorName xml:lang="en" nameType="Organizational">Victoria and Albert Museum</contributorName>
             <nameIdentifier schemeURI="https://ror.org/" nameIdentifierScheme="ROR">https://ror.org/034hh2e11</nameIdentifier>
           </contributor>
         </contributors>
@@ -210,7 +210,7 @@ arcu id posuere. Mauris ac dui finibus, volutpat nisl in, ullamcorper eros.</xht
             <affiliation affiliationIdentifier="https://ror.org/03efmqc40" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">Arizona State University</affiliation>
           </contributor>
           <contributor>
-            <contributorName xml:lang="en" nameType="Organizational">Royal College of Music</creatorName>
+            <contributorName xml:lang="en" nameType="Organizational">Royal College of Music</contributorName>
             <nameIdentifier schemeURI="https://ror.org/" nameIdentifierScheme="ROR">https://ror.org/04kwn3124</nameIdentifier>
           </contributor>
         </contributors>
