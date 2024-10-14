@@ -15,7 +15,7 @@
         <xs:element name="titles">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="title" maxOccurs="unbounded" minOccurs="0">
+              <xs:element name="title" maxOccurs="unbounded" minOccurs="1">
                 <xs:complexType>
                   <xs:simpleContent>
                     <xs:extension base="xs:string">
@@ -30,7 +30,7 @@
         <xs:element name="contributors">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="contributor" maxOccurs="unbounded" minOccurs="0">
+              <xs:element name="contributor" maxOccurs="unbounded" minOccurs="1">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="contributorName">
@@ -73,7 +73,7 @@
         <xs:element name="descriptions">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="description">
+              <xs:element name="description" maxOccurs="unbounded" minOccurs="0">
                 <xs:complexType>
                   <xs:simpleContent>
                     <xs:extension base="xs:string">
@@ -279,7 +279,7 @@
                           <xs:element name="titles">
                             <xs:complexType>
                               <xs:sequence>
-                                <xs:element name="title" maxOccurs="unbounded" minOccurs="0">
+                                <xs:element name="title" maxOccurs="unbounded" minOccurs="1">
                                   <xs:complexType>
                                     <xs:simpleContent>
                                       <xs:extension base="xs:string">
@@ -393,7 +393,7 @@
                           <xs:element name="titles">
                             <xs:complexType>
                               <xs:sequence>
-                                <xs:element name="title" maxOccurs="unbounded" minOccurs="0">
+                                <xs:element name="title" maxOccurs="unbounded" minOccurs="1">
                                   <xs:complexType>
                                     <xs:simpleContent>
                                       <xs:extension base="xs:string">
@@ -565,7 +565,7 @@
                           <xs:element name="titles">
                             <xs:complexType>
                               <xs:sequence>
-                                <xs:element name="title" maxOccurs="unbounded" minOccurs="0">
+                                <xs:element name="title" maxOccurs="unbounded" minOccurs="1">
                                   <xs:complexType>
                                     <xs:simpleContent>
                                       <xs:extension base="xs:string">
