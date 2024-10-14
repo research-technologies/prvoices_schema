@@ -43,8 +43,8 @@
                         </xs:simpleContent>
                       </xs:complexType>
                     </xs:element>
-                    <xs:element type=" xs: string" name="givenName"/>
-                    <xs:element type=" xs: string" name="familyName"/>
+                    <xs:element type="xs:string" name="givenName"/>
+                    <xs:element type="xs:string" name="familyName"/>
                     <xs:element name="nameIdentifier">
                       <xs:complexType>
                         <xs:simpleContent>
@@ -91,15 +91,15 @@
               <xs:element name="xhtml:section" maxOccurs="unbounded" minOccurs="0">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element type=" xs: string" name="xhtml:title"/>
+                    <xs:element type="xs:string" name="xhtml:title"/>
                     <xs:element name="xhtml:p">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element type=" xs: string" name="xhtml:em"/>
+                          <xs:element type="xs:string" name="xhtml:em"/>
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
-                    <xs:element type=" xs: string" name="xhtml:p"/>
+                    <xs:element type="xs:string" name="xhtml:p"/>
                     <xs:element name="xhtml:ul">
                       <xs:complexType>
                         <xs:sequence>
@@ -188,7 +188,7 @@
               <xs:element name="fundingReference" maxOccurs="unbounded" minOccurs="0">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element type=" xs: string" name="funderName"/>
+                    <xs:element type="xs:string" name="funderName"/>
                     <xs:element name="funderIdentifier">
                       <xs:complexType>
                         <xs:simpleContent>
@@ -207,14 +207,14 @@
                         </xs:simpleContent>
                       </xs:complexType>
                     </xs:element>
-                    <xs:element type=" xs: string" name="awardTitle"/>
+                    <xs:element type="xs:string" name="awardTitle"/>
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element type=" xs: string" name="project"/>
+        <xs:element type="xs:string" name="project"/>
         <xs:element name="portfolioItems">
           <xs:complexType>
             <xs:sequence>
@@ -249,8 +249,8 @@
                                           </xs:simpleContent>
                                         </xs:complexType>
                                       </xs:element>
-                                      <xs:element type=" xs: string" name="givenName"/>
-                                      <xs:element type=" xs: string" name="familyName"/>
+                                      <xs:element type="xs:string" name="givenName"/>
+                                      <xs:element type="xs:string" name="familyName"/>
                                       <xs:element name="nameIdentifier">
                                         <xs:complexType>
                                           <xs:simpleContent>
@@ -309,7 +309,7 @@
                           <xs:element name="geoLocation" maxOccurs="unbounded" minOccurs="0">
                             <xs:complexType>
                               <xs:sequence>
-                                <xs:element type=" xs: string" name="geoLocationPlace"/>
+                                <xs:element type="xs:string" name="geoLocationPlace"/>
                                 <xs:element name="geoLocationPoint">
                                   <xs:complexType>
                                     <xs:sequence>
@@ -363,8 +363,8 @@
                                           </xs:simpleContent>
                                         </xs:complexType>
                                       </xs:element>
-                                      <xs:element type=" xs: string" name="givenName"/>
-                                      <xs:element type=" xs: string" name="familyName"/>
+                                      <xs:element type="xs:string" name="givenName"/>
+                                      <xs:element type="xs:string" name="familyName"/>
                                       <xs:element name="nameIdentifier">
                                         <xs:complexType>
                                           <xs:simpleContent>
@@ -423,7 +423,7 @@
                           <xs:element name="geoLocation" maxOccurs="unbounded" minOccurs="0">
                             <xs:complexType>
                               <xs:sequence>
-                                <xs:element type=" xs: string" name="geoLocationPlace"/>
+                                <xs:element type="xs:string" name="geoLocationPlace"/>
                                 <xs:element name="geoLocationPoint">
                                   <xs:complexType>
                                     <xs:sequence>
@@ -452,8 +452,8 @@
                                   <xs:complexType>
                                     <xs:sequence>
                                       <xs:element type=" xs: Date" name="uri"/>
-                                      <xs:element type=" xs: string" name="filename"/>
-                                      <xs:element type=" xs: string" name="format"/>
+                                      <xs:element type="xs:string" name="filename"/>
+                                      <xs:element type="xs:string" name="format"/>
                                       <xs:element name="rights">
                                         <xs:complexType>
                                           <xs:simpleContent>
@@ -479,8 +479,8 @@
                                                       </xs:simpleContent>
                                                     </xs:complexType>
                                                   </xs:element>
-                                                  <xs:element type=" xs: string" name="givenName"/>
-                                                  <xs:element type=" xs: string" name="familyName"/>
+                                                  <xs:element type="xs:string" name="givenName"/>
+                                                  <xs:element type="xs:string" name="familyName"/>
                                                   <xs:element name="nameIdentifier">
                                                     <xs:complexType>
                                                       <xs:simpleContent>
@@ -536,8 +536,8 @@
                                           </xs:simpleContent>
                                         </xs:complexType>
                                       </xs:element>
-                                      <xs:element type=" xs: string" name="givenName"/>
-                                      <xs:element type=" xs: string" name="familyName"/>
+                                      <xs:element type="xs:string" name="givenName"/>
+                                      <xs:element type="xs:string" name="familyName"/>
                                       <xs:element name="nameIdentifier">
                                         <xs:complexType>
                                           <xs:simpleContent>
@@ -623,8 +623,8 @@
                                           </xs:simpleContent>
                                         </xs:complexType>
                                       </xs:element>
-                                      <xs:element type=" xs: string" name="givenName"/>
-                                      <xs:element type=" xs: string" name="familyName"/>
+                                      <xs:element type="xs:string" name="givenName"/>
+                                      <xs:element type="xs:string" name="familyName"/>
                                       <xs:element name="nameIdentifier">
                                         <xs:complexType>
                                           <xs:simpleContent>
@@ -694,7 +694,7 @@
                     <xs:element name="titles">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element type=" xs: string" name="title"/>
+                          <xs:element type="xs:string" name="title"/>
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
@@ -714,8 +714,8 @@
                                     </xs:simpleContent>
                                   </xs:complexType>
                                 </xs:element>
-                                <xs:element type=" xs: string" name="givenName"/>
-                                <xs:element type=" xs: string" name="familyName"/>
+                                <xs:element type="xs:string" name="givenName"/>
+                                <xs:element type="xs:string" name="familyName"/>
                                 <xs:element name="nameIdentifier">
                                   <xs:complexType>
                                     <xs:simpleContent>
