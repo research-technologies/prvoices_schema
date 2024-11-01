@@ -313,18 +313,18 @@
                                 <xs:element name="geoLocationPoint">
                                   <xs:complexType>
                                     <xs:sequence>
-                                      <xs:element type=" xs: float" name="pointLongitude"/>
-                                      <xs:element type=" xs: float" name="pointLatitude"/>
+                                      <xs:element type="xs:float" name="pointLongitude"/>
+                                      <xs:element type="xs:float" name="pointLatitude"/>
                                     </xs:sequence>
                                   </xs:complexType>
                                 </xs:element>
                                 <xs:element name="geoLocationBox">
                                   <xs:complexType>
                                     <xs:sequence>
-                                      <xs:element type=" xs: float" name="westBoundLongitude"/>
-                                      <xs:element type=" xs: float" name="eastBoundLongitude"/>
-                                      <xs:element type=" xs: float" name="southBoundLatitude"/>
-                                      <xs:element type=" xs: float" name="northBoundLatitude"/>
+                                      <xs:element type="xs:float" name="westBoundLongitude"/>
+                                      <xs:element type="xs:float" name="eastBoundLongitude"/>
+                                      <xs:element type="xs:float" name="southBoundLatitude"/>
+                                      <xs:element type="xs:float" name="northBoundLatitude"/>
                                     </xs:sequence>
                                   </xs:complexType>
                                 </xs:element>
@@ -337,9 +337,17 @@
                                 <xs:element name="file">
                                   <xs:complexType>
                                     <xs:sequence>
-                                      <xs:element type=" xs: Date" name="uri"/>
+                                      <xs:element type="xs:Date" name="uri"/>
                                       <xs:element type="xs:string" name="filename"/>
                                       <xs:element type="xs:string" name="format"/>
+                                      <xs:element name="provenance">
+                                        <xs:complexType>
+                                          <xs:attribute name="provenanceScheme" type="xs:string" use="required" />
+                                          <xs:attribute name="schemeURI" type="xs:string" use="required" />
+                                          <xs:attribute name="provenanceEmbedded" type="xs:boolean" use="required" />
+                                          <xs:attribute name="embedFormat" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
                                       <xs:element name="rights">
                                         <xs:complexType>
                                           <xs:simpleContent>
@@ -538,18 +546,18 @@
                                 <xs:element name="geoLocationPoint">
                                   <xs:complexType>
                                     <xs:sequence>
-                                      <xs:element type=" xs: float" name="pointLongitude"/>
-                                      <xs:element type=" xs: float" name="pointLatitude"/>
+                                      <xs:element type="xs:float" name="pointLongitude"/>
+                                      <xs:element type="xs:float" name="pointLatitude"/>
                                     </xs:sequence>
                                   </xs:complexType>
                                 </xs:element>
                                 <xs:element name="geoLocationBox">
                                   <xs:complexType>
                                     <xs:sequence>
-                                      <xs:element type=" xs: float" name="westBoundLongitude"/>
-                                      <xs:element type=" xs: float" name="eastBoundLongitude"/>
-                                      <xs:element type=" xs: float" name="southBoundLatitude"/>
-                                      <xs:element type=" xs: float" name="northBoundLatitude"/>
+                                      <xs:element type="xs:float" name="westBoundLongitude"/>
+                                      <xs:element type="xs:float" name="eastBoundLongitude"/>
+                                      <xs:element type="xs:float" name="southBoundLatitude"/>
+                                      <xs:element type="xs:float" name="northBoundLatitude"/>
                                     </xs:sequence>
                                   </xs:complexType>
                                 </xs:element>
@@ -562,9 +570,17 @@
                                 <xs:element name="file">
                                   <xs:complexType>
                                     <xs:sequence>
-                                      <xs:element type=" xs: Date" name="uri"/>
+                                      <xs:element type="xs:Date" name="uri"/>
                                       <xs:element type="xs:string" name="filename"/>
                                       <xs:element type="xs:string" name="format"/>
+                                      <xs:element name="provenance">
+                                        <xs:complexType>
+                                          <xs:attribute name="provenanceScheme" type="xs:string" use="required" />
+                                          <xs:attribute name="schemeURI" type="xs:string" use="required" />
+                                          <xs:attribute name="provenanceEmbedded" type="xs:boolean" use="required" />
+                                          <xs:attribute name="embedFormat" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
                                       <xs:element name="rights">
                                         <xs:complexType>
                                           <xs:simpleContent>
@@ -752,9 +768,17 @@
                                 <xs:element name="file">
                                   <xs:complexType>
                                     <xs:sequence>
-                                      <xs:element type=" xs: Date" name="uri"/>
+                                      <xs:element type="xs:Date" name="uri"/>
                                       <xs:element type="xs:string" name="filename"/>
                                       <xs:element type="xs:string" name="format"/>
+                                      <xs:element name="provenance">
+                                        <xs:complexType>
+                                          <xs:attribute name="provenanceScheme" type="xs:string" use="required" />
+                                          <xs:attribute name="schemeURI" type="xs:string" use="required" />
+                                          <xs:attribute name="provenanceEmbedded" type="xs:boolean" use="required" />
+                                          <xs:attribute name="embedFormat" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
                                       <xs:element name="rights">
                                         <xs:complexType>
                                           <xs:simpleContent>
@@ -936,10 +960,17 @@
                                 <xs:element name="file">
                                   <xs:complexType>
                                     <xs:sequence>
-                                      <xs:element type=" xs: Date" name="uri"/>
+                                      <xs:element type="xs:Date" name="uri"/>
                                       <xs:element type="xs:string" name="filename"/>
                                       <xs:element type="xs:string" name="format"/>
-                                      <xs:element name="rights">
+                                      <xs:element name="provenance">
+                                        <xs:complexType>
+                                          <xs:attribute name="provenanceScheme" type="xs:string" use="required" />
+                                          <xs:attribute name="schemeURI" type="xs:string" use="required" />
+                                          <xs:attribute name="provenanceEmbedded" type="xs:boolean" use="required" />
+                                          <xs:attribute name="embedFormat" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>                                      <xs:element name="rights">
                                         <xs:complexType>
                                           <xs:simpleContent>
                                             <xs:extension base="xs:string">
@@ -1169,9 +1200,17 @@
               <xs:element name="file">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element type=" xs: Date" name="uri"/>
+                    <xs:element type="xs:Date" name="uri"/>
                     <xs:element type="xs:string" name="filename"/>
                     <xs:element type="xs:string" name="format"/>
+                    <xs:element name="provenance">
+                      <xs:complexType>
+                        <xs:attribute name="provenanceScheme" type="xs:string" use="required" />
+                        <xs:attribute name="schemeURI" type="xs:string" use="required" />
+                        <xs:attribute name="provenanceEmbedded" type="xs:boolean" use="required" />
+                        <xs:attribute name="embedFormat" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
                     <xs:element name="rights">
                       <xs:complexType>
                         <xs:simpleContent>
