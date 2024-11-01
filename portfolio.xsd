@@ -313,22 +313,141 @@
                                 <xs:element name="geoLocationPoint">
                                   <xs:complexType>
                                     <xs:sequence>
-                                      <xs:element type=" xs: float" name="pointLongitude"/>
-                                      <xs:element type=" xs: float" name="pointLatitude"/>
+                                      <xs:element type="xs:float" name="pointLongitude"/>
+                                      <xs:element type="xs:float" name="pointLatitude"/>
                                     </xs:sequence>
                                   </xs:complexType>
                                 </xs:element>
                                 <xs:element name="geoLocationBox">
                                   <xs:complexType>
                                     <xs:sequence>
-                                      <xs:element type=" xs: float" name="westBoundLongitude"/>
-                                      <xs:element type=" xs: float" name="eastBoundLongitude"/>
-                                      <xs:element type=" xs: float" name="southBoundLatitude"/>
-                                      <xs:element type=" xs: float" name="northBoundLatitude"/>
+                                      <xs:element type="xs:float" name="westBoundLongitude"/>
+                                      <xs:element type="xs:float" name="eastBoundLongitude"/>
+                                      <xs:element type="xs:float" name="southBoundLatitude"/>
+                                      <xs:element type="xs:float" name="northBoundLatitude"/>
                                     </xs:sequence>
                                   </xs:complexType>
                                 </xs:element>
                               </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="files">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="file">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:Date" name="uri"/>
+                                      <xs:element type="xs:string" name="filename"/>
+                                      <xs:element type="xs:string" name="format"/>
+                                      <xs:element name="provenance">
+                                        <xs:complexType>
+                                          <xs:attribute name="provenanceScheme" type="xs:string" use="required" />
+                                          <xs:attribute name="schemeURI" type="xs:string" use="required" />
+                                          <xs:attribute name="provenanceEmbedded" type="xs:boolean" use="required" />
+                                          <xs:attribute name="embedFormat" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="rights">
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="xml:lang"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="contributors">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="contributor" maxOccurs="unbounded" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="contributorName">
+                                                    <xs:complexType>
+                                                      <xs:simpleContent>
+                                                        <xs:extension base="xs:string">
+                                                          <xs:attribute type="xs:string" name="nameType" use="optional"/>
+                                                          <xs:attribute type="xs:string" name="xml:lang" use="optional"/>
+                                                        </xs:extension>
+                                                      </xs:simpleContent>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element type="xs:string" name="givenName"/>
+                                                  <xs:element type="xs:string" name="familyName"/>
+                                                  <xs:element name="nameIdentifier">
+                                                    <xs:complexType>
+                                                      <xs:simpleContent>
+                                                        <xs:extension base="xs:string">
+                                                          <xs:attribute type="xs:string" name="schemeURI" use="optional"/>
+                                                        </xs:extension>
+                                                      </xs:simpleContent>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element name="affiliation">
+                                                    <xs:complexType>
+                                                      <xs:simpleContent>
+                                                        <xs:extension base="xs:string">
+                                                          <xs:attribute type="xs:string" name="affiliationIdentifier"/>
+                                                        </xs:extension>
+                                                      </xs:simpleContent>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute type="xs:string" name="contributorType" use="optional"/>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:byte" name="id"/>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="contextStatement">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="xhtml:section" maxOccurs="unbounded" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="xhtml:title"/>
+                                      <xs:element name="xhtml:p">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element type="xs:string" name="xhtml:em"/>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element type="xs:string" name="xhtml:p"/>
+                                      <xs:element name="xhtml:ul">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="xhtml:li" maxOccurs="unbounded" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="xhtml:a">
+                                                    <xs:complexType>
+                                                      <xs:simpleContent>
+                                                        <xs:extension base="xs:string">
+                                                          <xs:attribute type="xs:string" name="href"/>
+                                                        </xs:extension>
+                                                      </xs:simpleContent>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute type="xs:string" name="xmlns:xhtml"/>
                             </xs:complexType>
                           </xs:element>
                         </xs:sequence>
@@ -427,18 +546,18 @@
                                 <xs:element name="geoLocationPoint">
                                   <xs:complexType>
                                     <xs:sequence>
-                                      <xs:element type=" xs: float" name="pointLongitude"/>
-                                      <xs:element type=" xs: float" name="pointLatitude"/>
+                                      <xs:element type="xs:float" name="pointLongitude"/>
+                                      <xs:element type="xs:float" name="pointLatitude"/>
                                     </xs:sequence>
                                   </xs:complexType>
                                 </xs:element>
                                 <xs:element name="geoLocationBox">
                                   <xs:complexType>
                                     <xs:sequence>
-                                      <xs:element type=" xs: float" name="westBoundLongitude"/>
-                                      <xs:element type=" xs: float" name="eastBoundLongitude"/>
-                                      <xs:element type=" xs: float" name="southBoundLatitude"/>
-                                      <xs:element type=" xs: float" name="northBoundLatitude"/>
+                                      <xs:element type="xs:float" name="westBoundLongitude"/>
+                                      <xs:element type="xs:float" name="eastBoundLongitude"/>
+                                      <xs:element type="xs:float" name="southBoundLatitude"/>
+                                      <xs:element type="xs:float" name="northBoundLatitude"/>
                                     </xs:sequence>
                                   </xs:complexType>
                                 </xs:element>
@@ -451,9 +570,17 @@
                                 <xs:element name="file">
                                   <xs:complexType>
                                     <xs:sequence>
-                                      <xs:element type=" xs: Date" name="uri"/>
+                                      <xs:element type="xs:Date" name="uri"/>
                                       <xs:element type="xs:string" name="filename"/>
                                       <xs:element type="xs:string" name="format"/>
+                                      <xs:element name="provenance">
+                                        <xs:complexType>
+                                          <xs:attribute name="provenanceScheme" type="xs:string" use="required" />
+                                          <xs:attribute name="schemeURI" type="xs:string" use="required" />
+                                          <xs:attribute name="provenanceEmbedded" type="xs:boolean" use="required" />
+                                          <xs:attribute name="embedFormat" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
                                       <xs:element name="rights">
                                         <xs:complexType>
                                           <xs:simpleContent>
@@ -511,6 +638,49 @@
                                   </xs:complexType>
                                 </xs:element>
                               </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="contextStatement">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="xhtml:section" maxOccurs="unbounded" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="xhtml:title"/>
+                                      <xs:element name="xhtml:p">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element type="xs:string" name="xhtml:em"/>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element type="xs:string" name="xhtml:p"/>
+                                      <xs:element name="xhtml:ul">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="xhtml:li" maxOccurs="unbounded" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="xhtml:a">
+                                                    <xs:complexType>
+                                                      <xs:simpleContent>
+                                                        <xs:extension base="xs:string">
+                                                          <xs:attribute type="xs:string" name="href"/>
+                                                        </xs:extension>
+                                                      </xs:simpleContent>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute type="xs:string" name="xmlns:xhtml"/>
                             </xs:complexType>
                           </xs:element>
                         </xs:sequence>
@@ -592,6 +762,125 @@
                               </xs:sequence>
                             </xs:complexType>
                           </xs:element>
+                          <xs:element name="files">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="file">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:Date" name="uri"/>
+                                      <xs:element type="xs:string" name="filename"/>
+                                      <xs:element type="xs:string" name="format"/>
+                                      <xs:element name="provenance">
+                                        <xs:complexType>
+                                          <xs:attribute name="provenanceScheme" type="xs:string" use="required" />
+                                          <xs:attribute name="schemeURI" type="xs:string" use="required" />
+                                          <xs:attribute name="provenanceEmbedded" type="xs:boolean" use="required" />
+                                          <xs:attribute name="embedFormat" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="rights">
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="xml:lang"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="contributors">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="contributor" maxOccurs="unbounded" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="contributorName">
+                                                    <xs:complexType>
+                                                      <xs:simpleContent>
+                                                        <xs:extension base="xs:string">
+                                                          <xs:attribute type="xs:string" name="nameType" use="optional"/>
+                                                          <xs:attribute type="xs:string" name="xml:lang" use="optional"/>
+                                                        </xs:extension>
+                                                      </xs:simpleContent>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element type="xs:string" name="givenName"/>
+                                                  <xs:element type="xs:string" name="familyName"/>
+                                                  <xs:element name="nameIdentifier">
+                                                    <xs:complexType>
+                                                      <xs:simpleContent>
+                                                        <xs:extension base="xs:string">
+                                                          <xs:attribute type="xs:string" name="schemeURI" use="optional"/>
+                                                        </xs:extension>
+                                                      </xs:simpleContent>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element name="affiliation">
+                                                    <xs:complexType>
+                                                      <xs:simpleContent>
+                                                        <xs:extension base="xs:string">
+                                                          <xs:attribute type="xs:string" name="affiliationIdentifier"/>
+                                                        </xs:extension>
+                                                      </xs:simpleContent>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute type="xs:string" name="contributorType" use="optional"/>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:byte" name="id"/>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="contextStatement">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="xhtml:section" maxOccurs="unbounded" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="xhtml:title"/>
+                                      <xs:element name="xhtml:p">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element type="xs:string" name="xhtml:em"/>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element type="xs:string" name="xhtml:p"/>
+                                      <xs:element name="xhtml:ul">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="xhtml:li" maxOccurs="unbounded" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="xhtml:a">
+                                                    <xs:complexType>
+                                                      <xs:simpleContent>
+                                                        <xs:extension base="xs:string">
+                                                          <xs:attribute type="xs:string" name="href"/>
+                                                        </xs:extension>
+                                                      </xs:simpleContent>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute type="xs:string" name="xmlns:xhtml"/>
+                            </xs:complexType>
+                          </xs:element>
                         </xs:sequence>
                         <xs:attribute type="xs:string" name="literatureType"/>
                       </xs:complexType>
@@ -663,6 +952,124 @@
                                   <xs:attribute type="xs:string" name="extentType"/>
                                 </xs:extension>
                               </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="files">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="file">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:Date" name="uri"/>
+                                      <xs:element type="xs:string" name="filename"/>
+                                      <xs:element type="xs:string" name="format"/>
+                                      <xs:element name="provenance">
+                                        <xs:complexType>
+                                          <xs:attribute name="provenanceScheme" type="xs:string" use="required" />
+                                          <xs:attribute name="schemeURI" type="xs:string" use="required" />
+                                          <xs:attribute name="provenanceEmbedded" type="xs:boolean" use="required" />
+                                          <xs:attribute name="embedFormat" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>                                      <xs:element name="rights">
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:string" name="xml:lang"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="contributors">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="contributor" maxOccurs="unbounded" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="contributorName">
+                                                    <xs:complexType>
+                                                      <xs:simpleContent>
+                                                        <xs:extension base="xs:string">
+                                                          <xs:attribute type="xs:string" name="nameType" use="optional"/>
+                                                          <xs:attribute type="xs:string" name="xml:lang" use="optional"/>
+                                                        </xs:extension>
+                                                      </xs:simpleContent>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element type="xs:string" name="givenName"/>
+                                                  <xs:element type="xs:string" name="familyName"/>
+                                                  <xs:element name="nameIdentifier">
+                                                    <xs:complexType>
+                                                      <xs:simpleContent>
+                                                        <xs:extension base="xs:string">
+                                                          <xs:attribute type="xs:string" name="schemeURI" use="optional"/>
+                                                        </xs:extension>
+                                                      </xs:simpleContent>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element name="affiliation">
+                                                    <xs:complexType>
+                                                      <xs:simpleContent>
+                                                        <xs:extension base="xs:string">
+                                                          <xs:attribute type="xs:string" name="affiliationIdentifier"/>
+                                                        </xs:extension>
+                                                      </xs:simpleContent>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute type="xs:string" name="contributorType" use="optional"/>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:byte" name="id"/>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="contextStatement">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="xhtml:section" maxOccurs="unbounded" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="xhtml:title"/>
+                                      <xs:element name="xhtml:p">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element type="xs:string" name="xhtml:em"/>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element type="xs:string" name="xhtml:p"/>
+                                      <xs:element name="xhtml:ul">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="xhtml:li" maxOccurs="unbounded" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="xhtml:a">
+                                                    <xs:complexType>
+                                                      <xs:simpleContent>
+                                                        <xs:extension base="xs:string">
+                                                          <xs:attribute type="xs:string" name="href"/>
+                                                        </xs:extension>
+                                                      </xs:simpleContent>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute type="xs:string" name="xmlns:xhtml"/>
                             </xs:complexType>
                           </xs:element>
                         </xs:sequence>
@@ -785,6 +1192,82 @@
                 <xs:attribute type="xs:string" name="xml:lang"/>
               </xs:extension>
             </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="files">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="file">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:Date" name="uri"/>
+                    <xs:element type="xs:string" name="filename"/>
+                    <xs:element type="xs:string" name="format"/>
+                    <xs:element name="provenance">
+                      <xs:complexType>
+                        <xs:attribute name="provenanceScheme" type="xs:string" use="required" />
+                        <xs:attribute name="schemeURI" type="xs:string" use="required" />
+                        <xs:attribute name="provenanceEmbedded" type="xs:boolean" use="required" />
+                        <xs:attribute name="embedFormat" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="rights">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="xml:lang"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="contributors">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="contributor" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="contributorName">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="nameType" use="optional"/>
+                                        <xs:attribute type="xs:string" name="xml:lang" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element type="xs:string" name="givenName"/>
+                                <xs:element type="xs:string" name="familyName"/>
+                                <xs:element name="nameIdentifier">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="schemeURI" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="affiliation">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="affiliationIdentifier"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute type="xs:string" name="contributorType" use="optional"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:byte" name="id"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
           </xs:complexType>
         </xs:element>
       </xs:sequence>
