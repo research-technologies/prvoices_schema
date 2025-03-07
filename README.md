@@ -1,4 +1,4 @@
-# prvoices_schema
+# Practice Research Voices Schema
 ## Introduction
 The metadata properties described below relate to the 'Portfolio' item type.  
 All fields are multiple unless specified otherwise.   
